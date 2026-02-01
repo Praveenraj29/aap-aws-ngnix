@@ -20,6 +20,11 @@
 
     - name: Create a test HTML file
       copy:
+        content: "<html><body><h1>Hello from AWX!</h1></body></html>"
+        dest: /var/www/html/index.html
+
+   - name: Create a test HTML file 1 
+      copy:
         content: "<html><body><h1>Hello from AAP!</h1></body></html>"
         dest: /var/www/html/index.html
 
@@ -31,3 +36,4 @@
         mode: '0755'
 
         recurse: yes
+
